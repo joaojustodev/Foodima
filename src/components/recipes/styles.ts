@@ -1,8 +1,6 @@
 import styled from "styled-components";
+import { Form } from "formik";
 
-interface FilterProps {
-  isvisible: boolean;
-}
 
 export const Container = styled.section`
   position: relative;
@@ -47,20 +45,24 @@ export const FilterIconButton = styled.div`
   cursor: pointer;
   @media screen and (max-width: 867px) {
     display: block;
-    width: 46px;
-    height: 46px;
+    width: 50px;
+    height: 50px;
     padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: ${({ theme }) => theme.colors.black};
-    border-radius: 8px;
+    box-shadow: ${({theme}) => theme.shadow};
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 `;
 
-export const SearchInputBlock = styled.div`
+export const SearchInputForm = styled(Form)`
   position: relative;
   width: 100%;
+
+  
 `;
 
 export const SearchInputIcon = styled.div`
@@ -74,35 +76,17 @@ export const SearchInput = styled.input`
   width: 100%;
   height: 50px;
   padding: 14px 14px 14px 44px;
+  
 
   background: ${({ theme }) => theme.colors.gray};
+  box-shadow: ${({theme}) => theme.shadow};
   border: none;
-  border-radius: 12px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 
   opacity: 0.9;
 
   font-weight: 500;
-`;
-
-export const Filter = styled.div<FilterProps>`
-  grid-area: filter;
-
-  width: 100%;
-  height: 250px;
-  padding: 12px;
-
-  display: flex;
-  flex-direction: column;
-
-  @media screen and (max-width: 867px) {
-    position: absolute;
-    z-index: ${({ isvisible }) => (isvisible ? 10 : -10)};
-    background: #fff;
-    box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.12);
-    top: 80px;
-    opacity: ${({ isvisible }) => (isvisible ? "1" : "0")};
-    transition: opacity 0.2s ease;
-  }
 `;
 
 export const Content = styled.div`

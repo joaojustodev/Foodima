@@ -1,4 +1,5 @@
 const theme = {
+  shadow: "0 0 5px 0px rgba(0,0,0,0.12)",
   colors: {
     black: "#161211",
     primary: "#F5BDB6",

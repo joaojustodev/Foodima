@@ -1,44 +1,65 @@
 import React from "react";
+import { Formik, FormikValues } from "formik";
 
 import RecipesCard from "../recipesCard";
+import Filter from "../filter";
 import { AiOutlineSearch, AiFillFilter } from "react-icons/ai";
 import {
   Container,
   Header,
   FilterIconButton,
-  SearchInputBlock,
+  SearchInputForm,
   SearchInputIcon,
   SearchInput,
-  Filter,
   Content,
 } from "./styles";
 
-const Recipes: React.FC = () => {
+const Recipes: React.FC<{id: string}> = ({id}) => {
   const [filterIsVisible, setFilterIsVisible] = React.useState(false);
   function handleClickFilterIsVisivle() {
     setFilterIsVisible(!filterIsVisible);
   }
 
+  function handleSubmit(data: FormikValues) {
+    console.log(data);
+  }
+
   return (
-    <Container className="container">
+    <Container className="container" id={id}>
       <Header>
-        <SearchInputBlock>
-          <SearchInputIcon>
-            <AiOutlineSearch size={22} />
-          </SearchInputIcon>
-          <SearchInput
-            type="text"
-            name="search"
-            placeholder="Search recopes and more..."
-          />
-        </SearchInputBlock>
+        <Formik
+          initialValues={{recipe: ""}}
+          onSubmit={handleSubmit}
+          validate={({recipe}) => {
+            const errors = {recipe: ""}
+            if(!recipe) {
+              errors.recipe = "Insira dados no campo para busca";
+              return errors;
+            }           
+          }}
+        >
+          {({values,handleChange,handleSubmit}) => (
+            <>
+                <SearchInputForm onSubmit={handleSubmit}>
+                  <SearchInputIcon>
+                    <AiOutlineSearch size={22} />
+                  </SearchInputIcon>
+                  <SearchInput
+                    type="text"
+                    name="recipe"
+                    placeholder="Pesquise sua receita.."
+                    value={values.recipe}
+                    onChange={handleChange}
+                  />
+                </SearchInputForm>
+              </>
+          )}
+        </Formik>
         <FilterIconButton onClick={handleClickFilterIsVisivle}>
           <AiFillFilter color="#E1E1E6" size={22} />
         </FilterIconButton>
       </Header>
-      <Filter isvisible={filterIsVisible}>
-        <h1>Filter</h1>
-      </Filter>
+      <Filter isvisible={filterIsVisible}/>
       <Content>
         <RecipesCard />
       </Content>

@@ -10,18 +10,17 @@ const Home: React.FC = () => {
     <Layout>
       <Hero className="container hero">
         <HeroContentWrapper>
-          <h1>Recipe Contest</h1>
+          <h1>Receitas Saborosas</h1>
           <p>
-            Recipe contest are like our big constantly-in-progress dinner
-            party-and you're invited.
+            As melhores receitas para você fazer aquele almoço delicioso.
           </p>
-          <a href="#">How they work</a>
+          <a href="#recipes">Ver receitas</a>
         </HeroContentWrapper>
         <HeroImageWrapper>
           <img src={hero} alt="hero" />
         </HeroImageWrapper>
       </Hero>
-      <Recipes />
+      <Recipes id="recipes" />
     </Layout>
   );
 };

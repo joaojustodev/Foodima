@@ -18,9 +18,17 @@ export const NavWrapper = styled.div`
 
 export const NavHeading = styled.div`
   a {
+    display:flex;
+  align-items:center;
+  justify-content:center;
     color: ${({ theme }) => theme.colors.black};
     font-size: 26px;
     font-weight: 700;
+  }
+  img {
+    width:46px;
+    height:46px;
+    margin-right:6px;
   }
 `;
 

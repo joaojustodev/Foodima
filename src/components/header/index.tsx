@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import FoodimaIcon from "../../static/foodima-icon.svg";
 import {
   Container,
   Nav,
@@ -16,6 +17,7 @@ const Header: React.FC = () => {
         <NavWrapper>
           <NavHeading>
             <Link to="/" className="logo">
+            <img src={FoodimaIcon} alt="foodima" />
               Foodima
             </Link>
           </NavHeading>

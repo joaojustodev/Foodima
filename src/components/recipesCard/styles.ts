@@ -56,3 +56,19 @@ export const CardInfoAuthor = styled.p`
   color: ${({ theme }) => theme.colors.gray500};
   font-weight: 700;
 `;
+
+export const SeeMore = styled.div`
+      width:100%;
+      padding:8px;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      border:2px solid ${({theme}) => theme.colors.black};
+      cursor: pointer;
+      transition: opacity .2s ease;
+
+      &:hover {
+        opacity:0.8;
+      }`

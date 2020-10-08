@@ -34,6 +34,7 @@ export const HeroContentWrapper = styled.div`
   }
 
   a {
+    color: ${({theme}) => theme.colors.black};
     font-size: 1.2rem;
     font-weight: 700;
     text-decoration: underline;
