@@ -8,7 +8,7 @@
 
 ## 🎨 Screen
 
-## ✅ Cypress
+## ⚙ Cypress
 
 ## 🧰 Tools
 
@@ -16,7 +16,7 @@
 - [Styled-components](https://styled-components.com/)
 - [Cypress](https://cypress.io)
 
-## 🧰 Installation
+## 🚧 Installation
 
 ```sh
   $ cd foodima
@@ -26,6 +26,6 @@
   $ yarn start
 ```
 
-## 🙋‍♂️ Author
+## 🙅🏽‍♂️ Author
 
 - **João Vitor** - [Joaobr200](https://github.com/joaobr200)
