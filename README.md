@@ -1,6 +1,8 @@
+<div align="center">
+  <img src="./.github/foodima.svg" alt="foodima" width="250" height="250"/>
+</div>
 <h1 align="center">
   <strong>Foodima</strong>
-  <img src="./.github/foodima.svg" alt="foodima" width="250" height="250"/>
 </h1>
 
 <p align="center">
