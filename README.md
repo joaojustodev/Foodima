@@ -12,13 +12,13 @@
 ## 🎨 Screen
 
 <div align="center">
-  <img src="./.github/screen.gif" alt="cypress" width="400" height="400"/>
+  <img src="./.github/screen.gif" alt="cypress" width="600" height="400"/>
 </div>
 
 ## ⚙ Cypress
 
 <div align="center">
-  <img src="./.github/cypress.gif" alt="cypress" width="400" height="400"/>
+  <img src="./.github/cypress.gif" alt="cypress" width="600" height="400"/>
 </div>
 
 ## 🧰 Tools
