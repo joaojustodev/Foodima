@@ -1,4 +1,8 @@
 {
   "baseUrl": "http://localhost:3000",
-  "port": 8000
+  "port": 8000,
+  "componentFolder": "src/components",
+  "integrationFolder": "__tests__/integration",
+  "viewportWidth": 1280,
+  "viewportHeight": 720
 }

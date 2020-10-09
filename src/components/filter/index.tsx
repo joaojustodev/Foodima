@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import { Container, Heading,RecipeList,RecipeListItem } from './styles';
+import { Container, Heading, RecipeList, RecipeListItem } from "./styles";
 
 export interface FilterProps {
   isvisible: boolean;
 }
 
-const Filter: React.FC<FilterProps> = ({isvisible}) => {
+const Filter: React.FC<FilterProps> = ({ isvisible }) => {
   return (
-    <Container isvisible={isvisible}>
+    <Container isvisible={isvisible} className="filter">
       <div>
         <Heading>Receitas mais procuradas</Heading>
         <RecipeList>

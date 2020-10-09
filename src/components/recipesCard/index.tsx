@@ -9,12 +9,12 @@ import {
   CardInfo,
   CardInfoStars,
   CardInfoAuthor,
-  SeeMore
+  SeeMore,
 } from "./styles";
 
 const RecipesCard: React.FC = () => {
   return (
-    <Container>
+    <Container className="recipes">
       <Card>
         <CardImage>
           <img

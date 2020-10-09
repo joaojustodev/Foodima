@@ -17,7 +17,7 @@ const Header: React.FC = () => {
         <NavWrapper>
           <NavHeading>
             <Link to="/" className="logo">
-            <img src={FoodimaIcon} alt="foodima" />
+              <img src={FoodimaIcon} alt="foodima" />
               Foodima
             </Link>
           </NavHeading>
