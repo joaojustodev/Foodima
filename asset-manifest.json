@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.a94ac692.chunk.js",
-    "main.js.map": "/static/js/main.a94ac692.chunk.js.map",
+    "main.js": "/static/js/main.467375ea.chunk.js",
+    "main.js.map": "/static/js/main.467375ea.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c441b441.js",
     "runtime-main.js.map": "/static/js/runtime-main.c441b441.js.map",
     "static/js/2.72781a29.chunk.js": "/static/js/2.72781a29.chunk.js",
     "static/js/2.72781a29.chunk.js.map": "/static/js/2.72781a29.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.5043a48161c80cc7e67f668436829b9f.js": "/precache-manifest.5043a48161c80cc7e67f668436829b9f.js",
+    "precache-manifest.b121f4bb42e1f24336e50d552f508e14.js": "/precache-manifest.b121f4bb42e1f24336e50d552f508e14.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.72781a29.chunk.js.LICENSE.txt": "/static/js/2.72781a29.chunk.js.LICENSE.txt",
     "static/media/foodima-icon.svg": "/static/media/foodima-icon.da854aa0.svg",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.c441b441.js",
     "static/js/2.72781a29.chunk.js",
-    "static/js/main.a94ac692.chunk.js"
+    "static/js/main.467375ea.chunk.js"
   ]
 }
